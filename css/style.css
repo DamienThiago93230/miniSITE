@@ -34,13 +34,13 @@ body{
     margin-top: 20px;
     margin-right:auto;
     margin-left:auto;
-    border: 4px solid red;
+    border: 10px solid red;
 }
 
 /* le haut de page */
 header { 
     height: 236px;/* hauteur de l'élèment */
-    border: 2px solid red;
+    border: 10px solid red;
 }
 
 /* le cote de la page */
@@ -62,7 +62,7 @@ aside {
 /* le pied de page */
 footer {
 height: 236px;
-border: 20px solid red;
+border: 10px solid red;
 
 }
 
