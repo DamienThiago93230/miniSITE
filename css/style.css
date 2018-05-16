@@ -3,8 +3,8 @@
 /* CSS document */
 /* ma première feuille de style externe */
 /* des styles simples pour visualiser les div */
-.fond_orange {
- background: orange;
+.fond_rouge {
+ background: red;
 }
 
 .fond_rouge {
@@ -16,7 +16,7 @@ background: red;
 }  
 
 .fond_bleu{
-background: blue
+background: blue;
 }
     
 .fond_jaune{
@@ -24,6 +24,47 @@ background: yellow;
 }    
 
 body{
+    margin: auto; /* la marge extérieure d'un élèlement */
     background-color:rgb(209, 128, 28);
-    font-family:"Lucida sans" , "Lucida" , "Lucida Regular" , "Lucida Grande" , "Lucida Sans Unicode" , Geneva Verdana, sans-serif
+    font-family:"Lucida sans" , "Lucida" , "Lucida Regular" , "Lucida Grande" , "Lucida Sans Unicode" , Geneva Verdana, sans-serif;
 }
+/* l'emballage de toute la page */
+#wrapper { 
+    width: 998px;
+    margin-top: 20px;
+    margin-right:auto;
+    margin-left:auto;
+    border: 4px solid red;
+}
+
+/* le haut de page */
+header { 
+    height: 236px;/* hauteur de l'élèment */
+    border: 2px solid red;
+}
+
+/* le cote de la page */
+aside {
+    width: 280px;/* largeur de l'élèment */
+    float: left;
+}
+
+/* le contenu principal */
+#main {
+    width: 700px;
+    float: right;
+}
+/* la classe pour tout remttre dans le flu normal */
+.clear {
+    clear: both;
+}
+
+/* le pied de page */
+footer {
+height: 236px;
+border: 20px solid red;
+
+}
+
+
+

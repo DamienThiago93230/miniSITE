@@ -12,31 +12,41 @@
 <body> 
     <!-- des nouveautés HTML 5 -->
     <!-- debut le div pricinpal -->
-   <div>
+   <div id="wrapper">
     <!-- en-tete de la page ou d'une division ou section -->
        <header class="fond_vert">
            <h1>En tete de la page ou d' une division ou d'une section</h1>
               <p>Avec un peu de texte</p>
-              <p>Avec un peu de texte dans un paragraphe</p>
+              <p>Avec un peu de texte dans un autre paragraphe</p>
       </header>
-    <!-- la navigation de la page -->
-       <nav class="fond_rouge">
-       <h2>La navigation</h2>
-          <ul>
-              <li>Menu01</li>
-              <li>Menu02</li>
-              <li>Menu03</li>
-              <li>Menu04</li>
-          </ul>
-    <!-- contenu textuel -->
-       <article class="fond_orange">Contenu textuel</article>
-    <!-- le coté de la page -->
-    
-       <aside class="fond_bleu">Le coté de la page</aside>
-    <!-- le pied de page -->
-       <footer class="fond_jaune">Pied de page</footer>
-     
-   </div>    
+      <aside class="fond_bleu">
+            <h2>Bienvenue</h2><!-- la navigation de la page -->
+<!-- le coté de la page -->
+         <nav class="fond_rouge" >
+        <h2>La navigation</h2>
+           <ul>
+               <li class="fond_bleu">Menu # 01</li> 
+               <li>Menu # 02</li>
+               <li class="fond_bleu">Menu # 03</li>
+               <li>Menu # 04</li>
+               <li class="fond_bleu">Menu # 05</li>
+               <li>Menu # 06</li>
+               <li class="fond_bleu">Menu # 07</li>
+               <li>Menu # 08</li> 
+           </ul>
+       </nav>
+    </aside>
+    <div id="main">
+                   <article class="fond_orange"><!-- un article avec sont h2 -->
+                   <h2 class="fond_bleu">Paris est Magique !!!</h2>
+                   <p  class="fond_vert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel nobis, temporibus autem tenetur nemo eum ad laborum velit omnis optio eaque nesciunt incidunt corrupti molestiae architecto odit reprehenderit deleniti?</p>
+                   <p class="fond_vert">Je suis le <span class="fond_bleu">best </span>!</p>
+                   <p class="fond_vert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel nobis, temporibus autem tenetur nemo eum ad laborum velit omnis optio eaque nesciunt incidunt corrupti molestiae architecto odit reprehenderit deleniti?</p>
+               </article>
+    </div> <!-- fermeture de la div main -->
+    <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
+       <footer class="fond_jaune">Pied de page</footer><!-- le pied de page -->
+    </div><!-- fermeture wrapper -->
+            
 </body>
-
 </html>        
