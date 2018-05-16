@@ -30,29 +30,34 @@ body{
 }
 /* l'emballage de toute la page */
 #wrapper { 
-    width: 998px;
+    width: 1000px;
     margin-top: 20px;
     margin-right:auto;
     margin-left:auto;
-    border: 10px solid red;
+   
 }
 
 /* le haut de page */
 header { 
-    height: 236px;/* hauteur de l'élèment */
-    border: 10px solid red;
+    background: url(../img/panorama.jpg) center center no-repeat;
+    height: 417px;/* hauteur de l'élèment */
+    border: 5px solid red;
 }
 
 /* le cote de la page */
 aside {
     width: 280px;/* largeur de l'élèment */
     float: left;
+    padding: 10px;
 }
 
 /* le contenu principal */
 #main {
-    width: 700px;
+    width: 680px;
+height: 400px;
     float: right;
+    padding: 10px;
+    
 }
 /* la classe pour tout remttre dans le flu normal */
 .clear {
@@ -62,7 +67,7 @@ aside {
 /* le pied de page */
 footer {
 height: 236px;
-border: 10px solid red;
+border: 5px solid red;
 
 }
 
