@@ -4,102 +4,136 @@
         <meta charset="UTF-8">
         <meta name="viewport" contente="widht=device=widht,initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" contente="ie-edge">
-        <title>miniSITE : accueil</title>
-        <title>miniSITE : garage/ une page avec des styles CSS</title>
-        <!--la feuille de style externe avec une balise link-->
+           <title>miniSITE : accueil</title>
+           <title>miniSITE : garage/ une page avec des styles CSS</title><!--la feuille de style externe avec une balise link-->
         <link href="css/style.css" rel="stylesheet">
     </head>
-<body> 
+    <body> 
     <!-- des nouveautés HTML 5 -->
     <!-- debut le div pricinpal -->
-   <div id="wrapper">
+       <div id="wrapper">
     <!-- en-tete de la page ou d'une division ou section -->
-       <header>
-           <h1><a href="index.html">MiniSite de Damien</a></h1>
-      </header>
-      <aside class="fond_bleu">
-            <h1>Bienvenue</h1><!-- la navigation de la page -->
-<!-- le coté de la page -->
-         <nav class="fond_rouge" >
-        <h2>La navigation</h2>
-           <ul>
-               <li><a href="index.html" title="MiniSite : Accueil">Accueil</a></li> 
-               <li><a href="photos.html" title="MiniSite : des photos">Photos</a></li>
-               <li><a href="textes.html" title="MiniSite : des textes">Textes</a></li>
-               <li><a href="formulaire.html" title="MiniSite : des formulaires">Formulaires</a></li>
-               <li><a href="tableaux.html" title="MiniSite : des tableaux"></a>Tableaux</li> 
-           </ul>
-       </nav>
-    </aside>
-    <div id="main" class="fond_vert">
+            <header>
+                <h1><a href="index.html">MiniSite de Damien</a></h1>
+            </header>
+            <aside class="fond_orange">
+                <h1>Bienvenue</h1><!-- la navigation de la page -->
+            <!-- le coté de la page -->
+                <nav class="fond_vert">
+                    <h2>La navigation</h2>
+                    <ul>
+                        <li><a href="index.html" title="MiniSite : Accueil">Accueil</a></li> 
+                        <li><a href="photos.html" title="MiniSite : des photos">Photos</a></li>
+                        <li><a href="textes.html" title="MiniSite : des textes">Textes</a></li>
+                        <li><a href="formulaire.html" title="MiniSite : des formulaires">Formulaires</a></li>
+                        <li><a href="tableaux.html" title="MiniSite : des tableaux">Tableaux</a></li> 
+                    </ul>
+                </nav>
+            </aside>
+            <div id="main" class="fond_vert">
         <h2>Mon premier tableau</h2>
-        <table>
-               <tr>
-                   <td>Mohammed-Tarek</td>
-                   <td> 06 28 54 97 96</td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>akbar</td>
-                   <td>07 53 17 58 48</td>
-                   <td>:</td>
-                </tr>
-                <tr>
-                        <td>Marina</td>
-                        <td> 06 15 36 03 11</td>
-                        <td></td>
-                     </tr>
-                     <tr>
-                            <td>Mohamed</td>
-                            <td>06 67 80 55 98</td>
-                            <td></td>
-                         </tr>
-                         <tr>
-                                <td>Andrée</td>
-                                <td> 06 37 05 53 47</td>
-                                <td></td>
-                             </tr>
-                             <tr>
-                                    <td>Setti</td>
-                                    <td>07 62 44 53 74 </td>
-                                    <td></td>
-                                 </tr>
-                                 <tr>
-                                        <td>Papaoumar</td>
-                                        <td>06 52 31 75 40</td>
-                                        <td></td>
-                                     </tr>
-                                     <tr>
-                                            <td>Jean-Marc</td>
-                                            <td> 06 82 29 64 44 </td>
-                                            <td></td>
-                                         </tr>
-                                         <tr>
-                                             <td>Lesly</td>
-                                             <td>06 45 39 92 92</td>
-                                             <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kilic</td>
-                                            <td>06 45 39 92 92</td>
-                                            <td></td>
-                                    </tr>
-                                    <tr>
-                                        <tdPatrick></td>
-                                        <td> 06 63 74 11 35</td>
-                                        <td></td>
-                                </tr>
-                                 
-    
-
-
-        </table>
+        <table border="1">
+            <caption>La liste des salariés de Pantin</caption>
+            <!-- tr table rox une rangée de tableau -->
+            <thead>
+              <tr class="fond_jaune">
+                <!-- table head une céllule en-téte de colonne -->
+                <td>Nom</td>
+                <td>Prénom</td>
+                <td>Numéro</td>
+                <td>Email</td>
+               </tr>          
+            </thead>
+        <tfoot>
+            <tr>
+                <th>bas de tableau</th>
+                <th>bas de tableau</th>
+                <th>bas de tableau</th> 
+                <th></th>
+            </tr>
+        </tfoot>
+    <tbody>
+            <tr class="fond_rouge">
+                <td>Benkerouf</td>
+                <td>Mohammed-Tarek</td>
+                <td>06 28 54 97 96</td>
+                <td></td>
+            </tr>
+            
+               <!-- td table data une céllule de tableau -->
+            <tr>
+                <td></td>
+                <td>akbar</td>
+                <td>07 53 17 58 48</td>
+                <td></td>
+            </tr>          
+            <tr class="fond_rouge">
+                <td></td>
+                <td>Marina</td>
+                <td>06 15 36 03 11</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Mohamed</td>
+                <td>06 67 80 55 98</td>
+                <td></td>
+            </tr>
+            <tr class="fond_rouge">
+                <td></td>
+                <td>Andrée</td>
+                <td>06 37 05 53 47</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Setti</td>
+                <td>07 62 44 53 74 </td>
+                <td></td>
+            </tr>
+            <tr class="fond_rouge">
+                <td></td>
+                <td>Papaoumar</td>
+                <td>06 52 31 75 40</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Jean-Marc</td>
+                <td>06 82 29 64 44 </td>
+                <td></td>
+            </tr>
+            <tr class="fond_rouge">
+                <td></td>
+                <td>Lesly</td>
+                <td>06 45 39 92 92</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Kilic</td>
+                <td>06 45 39 92 92</td>
+                <td></td>
+            </tr>
+            <tr class="fond_rouge">
+                <td></td>
+                <td>Patrick</td>
+                <td>06 63 74 11 35</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Fabrice</td>
+                <td>06 03 28 34 36</td>
+                <td></td>
+            </tr>
+      </tbody>
+    </table>
 
                   
-    </div> <!-- fermeture de la div main -->
-    <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
-       <footer class="fond_jaune">Pied de page</footer><!-- le pied de page -->
-    </div><!-- fermeture wrapper -->
-            
-</body>
+            </div> <!-- fermeture de la div main -->
+            <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
+            <footer class="fond_vert">Pied de page</footer><!-- le pied de page -->
+        </div><!-- fermeture wrapper -->         
+    </body>
 </html>        

@@ -7,23 +7,26 @@
  background: red;
 }
 
-.fond_rouge {
-background: red;
+.fond_orange {
+background: orangered;
 }
 
 .fond_vert {
  background: greenyellow;
 }  
 
-.fond_bleu{
+.fond_bleu {
 background: blue;
 }
     
-.fond_jaune{
+.fond_jaune {
 background: yellow;
-}    
+}   
+.fond_bleu-ciel{
+    background: lightblue
+} 
 
-body{
+body {
     margin: auto; /* la marge extérieure d'un élèlement */
     background-color:rgb(209, 128, 28);
     font-family:"Lucida sans" , "Lucida" , "Lucida Regular" , "Lucida Grande" , "Lucida Sans Unicode" , Geneva Verdana, sans-serif;
@@ -40,8 +43,8 @@ body{
 /* le haut de page */
 header { 
     background: url(../img/panorama.jpg) center center no-repeat;
-    height: 417px;/* hauteur de l'élèment */
-    border: 5px solid yellowgreen;
+    height: 419px;/* hauteur de l'élèment */
+    border: 3px solid blue;
 }
 
 /* le cote de la page */
@@ -55,7 +58,8 @@ aside {
 #main {
     width: 680px;
     float: right;
-    padding: 10px;
+    padding: 7px;
+    border: 3px solid blue;
     
 }
 /* la classe pour tout remttre dans le flu normal */
@@ -65,8 +69,9 @@ aside {
 
 /* le pied de page */
 footer {
-height:236px;
-border: 2px solid red;
+    background: lightblue;
+    height:235px;
+    border: 3px solid blue;
 
 }
 /* le formulaire sur le CSS */
@@ -76,17 +81,17 @@ form {
     padding: 10px;
     width: 80%;
 }
-fieldset{
+fieldset {
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid olive;
     width: 80%;
 }
-legend{
+legend {
     font-weight: 800;
     color: olivedrab;
 }
-label{
+label {
     background-color: olivedrab;
     color: white;
     margin-top: 10px;
@@ -94,7 +99,7 @@ label{
     display: block;
     width: 265px;
 }
-label.inline{
+label.inline {
     /* tous les labels qui on la class .inline */
     display: inline;
     margin-right: 50px;
@@ -105,15 +110,38 @@ input, textarea, select {
     padding: 3px;
     box-shadow: 1px 1px 2px olive inset;
 }
-select{
+select {
     margin-top: 3px;
 }
-table{
-border-collapse: collapse;}
-
-td, th{ /* Mettre une bordure sur les td ET les th */
- border: 1px solid black;
-
+/* le tableau */
+table {
+    border-collapse:collapse; /* fusionne les bordures stylées ci-aprés */
 }
+table, th, td {
+border: 3px solid blue;
+}
+th, td {
+    padding: 5px;
+}
+tr:hover{/* un pseudo class :hover au passage du curseur*/
+    background-color: green;
+}
+
+caption, th, tfoot {
+    text-align: left;
+    border: 3px solid blue;
+    background: orangered;
+    color: whitesmoke;
+    padding: 10px;
+}
+caption {
+    caption-side: top;
+    text-transform: uppercase; 
+}
+
+
+
+
+
 
 
