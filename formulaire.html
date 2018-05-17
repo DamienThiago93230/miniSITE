@@ -15,31 +15,85 @@
    <div id="wrapper">
     <!-- en-tete de la page ou d'une division ou section -->
        <header>
-           <h1><a href="index.html">MiniSite des photos</h1>
+           <h1><a href="index.html">MiniSite des photos</a></h1>
       </header>
       <aside class="fond_bleu">
             <h1>Bienvenue</h1><!-- la navigation de la page -->
 <!-- le coté de la page -->
-<nav class="fond_rouge" >
-        <h2>La navigation</h2>
+       <nav class="fond_rouge" >
+         <h2>La navigation</h2>
            <ul>
                <li><a href="index.html" title="MiniSite : des photos">Accueil</a></li> 
-               <li><a href="photos.html" title="MiniSite : des photos">Menu 02</a></li>
-               <li><a href="textes.html" title="MiniSite : des textes">Menu 03</a></li>
-               <li><a href="formulaire.html" title="MiniSite : un formulaire">Menu 04</a></li>
-               
+               <li><a href="photos.html" title="MiniSite : des photos">Photos</a></li>
+               <li><a href="textes.html" title="MiniSite : des textes">Textes</a></li>
+               <li><a href="formulaire.html" title="MiniSite : des formulaires">Formulaires</a></li>
+               <li><a href="tableaux.html" title="MiniSite : des tableaux"></a>Tableaux</li> 
            </ul>
        </nav>
     </aside>
-                    <div id="main" class="fond_vert">
-                   <article><!-- un article avec sont h2 -->
-                   <h2>
-                   <img src="img/venise01.jpg" alt="venise" widht=5% height=5%></h2>
-                   <p  class="fond_vert">Venise magnifique le jour.</p>
-                   <p class="fond_vert">tres beau paysage au bord du port!</p>
-                   <p class="fond_vert">Venise, capitale de la région de la Vénétie au nord de l'Italie, occupe plus de 100 petites îles dans un lagon de la mer Adriatique. La ville ne comprend aucune route, uniquement des canaux, dont le Grand Canal, bordé de palais gothiques et Renaissance. Au centre, la place Saint-Marc abrite la basilique Saint-Marc, recouverte de mosaïques byzantines, et le campanile de Saint-Marc, avec vue sur les toits rouges de Venise</p>
-               </article>
-    </div> <!-- fermeture de la div main -->
+            <div id="main" class="fond_vert">
+                      <h2>Un premier formulaire en HTML</h2>
+                    <!-- je déclare un formulaire avec la balise form -->
+                            <form>
+                                 <!-- une étiquette pour le 1er champ du formulaire -->
+                                 <label for="pseudo">Votre pseudo *</label>
+                                 
+                                 <!--le premier du champs du formulaire du texte-->
+                                 <input type="text" name="pseudo" id="pseudo"  placeholder= "Votre pseudo" required><br>
+                                 
+                                 <!-- imput pour un mot de passe de typa password  -->
+                                 <label for="mdp">Mot de passe *</label>
+                                 <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required><br>
+                                 
+                                 <!-- input et label pour le courriel -->
+                                 <label for="email">Votre courriel *</label>
+                                 <input type="email" name="email" id="email" placeholder="Votre email" required><br>
+                                 
+                                 <!-- bouton pour envoyer le formulaire -->
+                                 <input type="submit" name="inscription" value="Envoyer"> -
+                                 <input type="reset" name="annuler" value="Annuler">
+                                </form>
+                            <hr>
+
+
+                            <h2>Un petit <em>sondage</em></h2>
+                            <p><small><strong>Un autre formulaire</strong></small></p>
+                            <form action="toto.php" method="POST">
+                                 <fieldset>
+                                     <legend> A propos du CSS :</legend> 
+                                     <p>Savez-zvous se que veut dire <strong>CSS</strong> ? : </p>
+                                     <!-- des boutos radio le 1er est coché -->
+                                     <input type="radio" name="CSS" value="oui" checked>
+                                        <label for="oui" class="inline">Oui</label>
+                                     <input type="radio" name="CSS" value="Non">
+                                        <label for="non" class="inline">Non</label> 
+
+                                        <label for="utilise">Si oui, l'utiliser vous ? :</label>
+                                        <!-- select un menu déroulant ou liste déroulante aves c'est options -->
+                                        <select name="utilise">
+                                            <option value="toujours">Toujours</option>
+                                            <option value="Parfoit">Parfoit</option>
+                                            <option value="Jamais">Jamais</option>
+                                        </select>
+                                 </fieldset>
+                                 <fieldset>
+                                     <legend>Vos coordonnées</legend>
+                                      <label for="email">Votre courriel</label>
+                                      <input type="email=" name="email" size="25" value="email" placeholder="Votre courriel" required>
+                                      <labbel for="commentaire">Donnez-nous votre avis : </labbel>
+                                      <textarea name="commentaire" cols="30" rows="4"></textarea>
+                                 </fieldset>
+
+                                      <fieldset>
+                                          <legend>Envoyez votre réponse :</legend>
+                                     <p>
+                                         <input type="submit" name="envoyez"   value="Envoyez votre reponse">
+                                         <input type="reset" name="annulez"    value="Annuler">
+                                    </p>
+                                      </fieldset>
+                            </form>
+                
+            </div> <!-- fermeture de la div main -->
     <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
        <footer class="fond_jaune">Pied de page</footer><!-- le pied de page -->
     </div><!-- fermeture wrapper -->
