@@ -41,7 +41,7 @@ body{
 header { 
     background: url(../img/panorama.jpg) center center no-repeat;
     height: 417px;/* hauteur de l'élèment */
-    border: 5px solid red;
+    border: 5px solid yellowgreen;
 }
 
 /* le cote de la page */
@@ -107,6 +107,13 @@ input, textarea, select {
 }
 select{
     margin-top: 3px;
+}
+table{
+border-collapse: collapse;}
+
+td, th{ /* Mettre une bordure sur les td ET les th */
+ border: 1px solid black;
+
 }
 
 
