@@ -16,7 +16,7 @@ background: orangered;
 }  
 
 .fond_bleu {
-background: blue;
+background: #9CB5CE;
 }
     
 .fond_jaune {
@@ -28,12 +28,14 @@ background: yellow;
 
 body {
     margin: auto; /* la marge extérieure d'un élèlement */
-    background-color:rgb(209, 128, 28);
+    /* background-color:rgb(209, 128, 28); */
+    background: linear-gradient(to left, red, yellow, green);
     font-family:"Lucida sans" , "Lucida" , "Lucida Regular" , "Lucida Grande" , "Lucida Sans Unicode" , Geneva Verdana, sans-serif;
 }
 /* l'emballage de toute la page */
 #wrapper { 
-    width: 1000px;
+    width: 1200px;
+    height: 900px;
     margin-top: 20px;
     margin-right:auto;
     margin-left:auto;
@@ -42,9 +44,10 @@ body {
 
 /* le haut de page */
 header { 
-    background: url(../img/panorama.jpg) center center no-repeat;
-    height: 419px;/* hauteur de l'élèment */
-    border: 3px solid blue;
+    /* background: url(../img/panorama.jpg) center center no-repeat; */
+    background: url(../img/panorama.jpg) center top no-repeat, linear-gradient(lightblue, whitesmoke) ;
+    height: 400px;/* hauteur de l'élèment */
+    /* border: 2px solid #9CB5CE; */
 }
 
 /* le cote de la page */
@@ -56,10 +59,10 @@ aside {
 
 /* le contenu principal */
 #main {
-    width: 680px;
+    width: 880px;
     float: right;
     padding: 7px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     
 }
 /* la classe pour tout remttre dans le flu normal */
@@ -70,8 +73,9 @@ aside {
 /* le pied de page */
 footer {
     background: lightblue;
-    height:235px;
+    height: 120px;
     border: 3px solid blue;
+    margin-bottom: 10px;
 
 }
 /* le formulaire sur le CSS */
@@ -138,6 +142,16 @@ caption {
     caption-side: top;
     text-transform: uppercase; 
 }
+/* différents styles de bordure */
+.filetgauche {/* un filet a gauche du bloc */
+    border-left: 4px solid blue;
+}
+.cartouche {/* un essai de bordure avec des arrondis */
+    border: 3px solid red;
+    border-radius: 100px;
+    padding: 25px;
+}
+
 
 
 
