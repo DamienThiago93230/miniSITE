@@ -19,7 +19,7 @@
             <aside class="fond_orange">
                 <h1>Bienvenue</h1><!-- la navigation de la page -->
             <!-- le coté de la page -->
-                <nav class="fond_vert">
+            <nav class="fond_vert">
                     <h2>La navigation</h2>
                     <ul>
                         <li><a href="index.html" title="MiniSite : Accueil">Accueil</a></li> 
@@ -27,6 +27,8 @@
                         <li><a href="textes.html" title="MiniSite : des textes">Textes</a></li>
                         <li><a href="formulaire.html" title="MiniSite : des formulaires">Formulaires</a></li>
                         <li><a href="tableaux.html" title="MiniSite : des tableaux">Tableaux</a></li> 
+                        <li><a href="bilbo.html" title="MiniSite : Bilbo ">Bilbo</a></li>
+                        
                     </ul>
                 </nav>
             </aside>
@@ -129,10 +131,54 @@
             </tr>
       </tbody>
     </table>
+    <hr>
+    <h2>Un tableau avec des cellules fusionnée</h2>
+    <table>
+        <thead>
+        <tbody>
+            <tr>
+                <th>Mois</th>
+                <th>Dépenses</th>
+                <th>Recettes</th>
+                <th>Sorties</th> 
+            </tr>
+        </thead>
+            <tr>
+                <td>Janvier</td>
+                <td>250 €</td>
+                <td>10 €</td>
+                <td>260 €</td>
+                
+            </tr>
+            <tr>
+                <td>Fevrier</td>
+                <td>20 €</td>
+                <td>10 €</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>20 €</td>
+                <td>10 €</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total : 320 €</td><!-- Fussionneée des cellules -->
+                
+                
+            </tr>
+        </tbody>
 
-                  
-            </div> <!-- fermeture de la div main -->
-            <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
+
+
+
+
+
+
+</tbody>
+    </table>         
+        </div> <!-- fermeture de la div main -->
+        <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
             <footer class="fond_vert">Pied de page</footer><!-- le pied de page -->
         </div><!-- fermeture wrapper -->         
     </body>
