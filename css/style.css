@@ -47,7 +47,7 @@ header {
     /* background: url(../img/panorama.jpg) center center no-repeat; */
     background: url(../img/panorama.jpg) center top no-repeat, linear-gradient(lightblue, whitesmoke) ;
     height: 400px;/* hauteur de l'élèment */
-    /* border: 2px solid #9CB5CE; */
+    border: 2px solid #9CB5CE;
 }
 
 /* le cote de la page */

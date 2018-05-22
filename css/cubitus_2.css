@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* css documents */
+body {
+    /* margin: 0 auto; */
+    background-color: white;
+}
+/* pour alterner les couleurs des div */
+.vert {
+    background-color: green;
+    
+}
+.rouge {
+  background-color: red;
+}
+.bleu_ciel {
+    background-color: lightseagreen;
+}
+.peau {
+    background-color: salmon;
+}
+.eau {
+    background-color: aquamarine
+}
+/* les styles communs aux div de la page */
+.c1 {
+    margin: 3px;
+    height: 10em;
+    width: 10em;
+    float: left; 
+    /* marche avec clear */
+    /* display: inline-block Permet le floatsans l'ajout de la propriété de clear */
+    border: 0.3em solid black;
+    border-radius: 10% 20% 40% 45%;
+    text-align: center;
+    background-color: green;
+}
+.c2 {
+    margin: 3px;
+    height: 10em;
+    width: 10em;
+    float: left;
+    border: 0.3em solid black;
+    /* border-radius: 20%; */
+    border-radius: 40% 0% 40% 0%;
+    text-align: center;
+    background-color: lightseagreen;
+}
+.c3 {
+    margin: 3px;
+    height: 10em;
+    width: 10em;
+    float: left;
+    border: 0.3em solid black;
+    /* border-radius: 20%; */
+    border-radius: 20% 40% 20% 40%;
+    text-align: center;
+    background-color: salmon;
+} 
+.c4 {
+    margin: 3px;
+    height: 10em;
+    width: 10em;
+    float: left;
+    border: 0.3em solid black;
+    /* border-radius: 20%; */
+    border-radius: 20% 40% 20% 40%;
+    text-align: center;
+    background-color: red;
+}
+.c5 {
+    margin: 3px;
+    height: 10em;
+    width: 10em;
+    float: left;
+    border: 0.3em solid black;
+    /* border-radius: 20%; */
+    border-radius:100%;
+    text-align: center;
+    background-color: aquamarine;
+}
+.c6 {
+    margin: 3px;
+    height: 10em;
+    width: 10em;
+    float: left;
+    /* border: 0.2em solid blue; */
+    /* border-radius: 20%; */
+    border-radius:100%;
+    text-align: center;
+    background-color: white;
+}
+
+
+.clear {
+    clear: both;
+}
