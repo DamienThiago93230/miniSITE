@@ -11,29 +11,16 @@ body {
 .rose {
     background-color: lightcoral;
 }
-.vert {
-    background-color: green;
-    
-}
-.rouge {
-  background-color: red;
-}
-.bleu_ciel {
-    background-color: lightseagreen;
-}
-.peau {
-    background-color: salmon;
-}
+
 /* les styles communs aux div de la page */
-.c1, {
+.c1 {
     height: 10em;
     width: 10em;
     float: left;
     border: 0.2em solid blue;
     /* border-radius: 20%; */
     border-radius: 10% 5% 40% 0%;
-    text-align: center;
-    color: blueviolet
+    text-align: center;   
 }
 .c2 {
     height: 10em;
@@ -43,17 +30,7 @@ body {
     /* border-radius: 20%; */
     border-radius: 10% 5% 40% 0%;
     text-align: center;
-    color: blueviolet
-}
-.c3 {
-    height: 10em;
-    width: 10em;
-    float: left;
-    border: 0.2em solid blue;
-    /* border-radius: 20%; */
-    border-radius: 10% 5% 40% 0%;
-    text-align: center;
-    color: blue
+    
 }
 .clear {
     clear: both;

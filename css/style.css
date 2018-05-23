@@ -6,6 +6,9 @@
 .fond_rouge {
  background: red;
 }
+.fond_vert {
+    background: green;
+}
 
 .fond_orange {
 background: orangered;
@@ -43,11 +46,37 @@ body {
 }
 
 /* le haut de page */
+
 header { 
     /* background: url(../img/panorama.jpg) center center no-repeat; */
     background: url(../img/panorama.jpg) center top no-repeat, linear-gradient(lightblue, whitesmoke) ;
     height: 400px;/* hauteur de l'élèment */
     border: 2px solid #9CB5CE;
+}
+nav {
+    background: yellowgreen;
+    border-radius: 0% 14% 0% 0%;
+}
+nav h1 {
+    background-color: white;
+    text-transform: uppercase;
+    width: 20%;
+    text-align: center;
+    margin-left: 10%;
+}
+nav h1 a {
+     text-decoration: none;
+     color: black;
+}
+nav h1 a:hover {
+    /* text-decoration: none; */
+    background-color: black;
+    color: white;
+}
+nav ul li {
+    background-color: greenyellow;
+    list-style-type: none;
+    list-style-image: url('../img/globe_fleche.png');
 }
 
 /* le cote de la page */
@@ -55,14 +84,37 @@ aside {
     width: 280px;/* largeur de l'élèment */
     float: left;
     padding: 10px;
+    border-radius: 0% 25% 0% 0%;
 }
-
+/* la navigation et les styles de lien */
+/* nav {
+    background: radial-gradient()
+} */
+a {
+    text-decoration: none;
+}/* les pseudo class */ 
+/* quand le lien n'a pas etait visité */
+a:link {  
+    color: green;
+}
+/* quand le lien a etait visité */
+a:visited {
+    color: blue;
+}
+/* au survol de la souri */
+a:hover {
+    color: white;
+    /* background: orangered; */
+    text-decoration: underline
+}
 /* le contenu principal */
 #main {
     width: 880px;
     float: right;
     padding: 7px;
     /* border: 3px solid blue; */
+    border-radius: 0% 25% 0% 0%;
+
     
 }
 /* la classe pour tout remttre dans le flu normal */
@@ -74,7 +126,7 @@ aside {
 footer {
     background: lightblue;
     height: 120px;
-    border: 3px solid blue;
+    border: 3px solid #9CB5CE;
     margin-bottom: 10px;
 
 }
@@ -151,10 +203,15 @@ caption {
     border-radius: 100px;
     padding: 25px;
 }
-
-
-
-
+/* ici pour l'astuce pour le survol dans la page texte */
+#survol p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+#survol:hover p {
+    display: block;
+}
 
 
 

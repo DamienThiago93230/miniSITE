@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS document */
+body {
+    font-family: 'PT Sans' , sans-serif;  
+    background-color: #ccff99;/* ou alor #dea */ 
+    color: #8ef726;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+#conteneur { 
+    width: 770px;  /* largeur de l'id conteneur */
+    margin: 0 auto;/* marge automatique qui centre la div après l'avoir remontée le plus haut possible dans l'affichage */
+    border: 2px solid #ab4; /* bordure extérieur */
+    background: #fff;
+    text-align: center;  
+}
+ 
+#header h1 {
+     height: 250px;
+     background-color: #ccff99;
+}

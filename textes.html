@@ -8,6 +8,17 @@
         <title>miniSITE : garage/ une page avec des styles CSS</title>
         <!--la feuille de style externe avec une balise link-->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+        /* les pseudo-class :first-child */
+        
+        article li:first-child {
+            background: orangered; 
+        }
+        article li:nth-child(2n){
+         background: olive;
+         color:white;
+        }
+        </style>
     </head>
 <body> 
     <!-- des nouveautés HTML 5 -->
@@ -32,8 +43,9 @@
             <li><a href="bilbo.html" title="MiniSite : Bilbo ">Bilbo le hobbit</a></li>
             <li><a href="desbordure.html" title="MiniSite : Bordure ">Bordures</a></li>
             <li><a href="float.html" title="MiniSite : float ">Le float</a></li>
+            <li><a href="zoning1.html" title="MiniSite : zoning1 ">Zoning1</a></li>
                 <ul>
-                    <li><a href="cubitus.html" title="MiniSite :Le Cubitus 1">Le cubitus1</a></li>
+                    <li><a href="cubitus1.html" title="MiniSite :Le Cubitus 1">Le cubitus1</a></li>
                     <li><a href="cubitus2.html" title="MiniSite :Le Cubitus 2">Le cubitus2</a></li>
                 </ul>
             <li><a href="#.html" title="MiniSite : # ">Menu</a></li>
@@ -41,12 +53,41 @@
     </nav>
     </aside>
     <div id="main">
-                   <article><!-- un article avec sont h2 -->
+                <article><!-- un article avec sont h2 -->
                    <h2>Découverte de la ville de Venise</h2>
-                   <p class="filetgauche">Venise, capitale de la région de la Vénétie au nord de l'Italie, occupe plus de 100 petites îles dans un lagon de la mer Adriatique. La ville ne comprend aucune route, uniquement des canaux, dont le Grand Canal, bordé de palais gothiques et Renaissance. Au centre, la place Saint-Marc abrite la basilique Saint-Marc, recouverte de mosaïques byzantines, et le campanile de Saint-Marc, avec vue sur les toits rouges de Venise.</p>
-                   <p class="filetgauche">Venise, capitale de la région de la Vénétie au nord de l'Italie, occupe plus de 100 petites îles dans un lagon de la mer Adriatique. La ville ne comprend aucune route, uniquement des canaux, dont le Grand Canal, bordé de palais gothiques et Renaissance. Au centre, la place Saint-Marc abrite la basilique Saint-Marc, recouverte de mosaïques byzantines, et le campanile de Saint-Marc, avec vue sur les toits rouges de Venise.</p>
-                   <p></p>
+                   <p class="filetgauche">Venise, capitale de la région de la Vénétie au nord de l'Italie, occupe plus de 100 petites îles dans un lagon de la mer Adriatique. La ville ne comprend aucune route, uniquement des canaux, dont le Grand Canal, bordé de palais gothiques et Renaissance. Au centre, la place Saint-Marc abrite la basilique Saint-Marc, recouverte de mosaïques byzantines, et le campanile de Saint-Marc, avec vue sur les toits rouges de Venise.</p>        
                </article>
+               <h3>Une astuce avec un hover</h3>
+               <div id="survol">
+                   survolez cete ligne pour le faire apparaitre
+                   <p>Coucou je suis la !</p>
+               </div>
+               <article>
+               <h1>Liste de chose a faire</h1>
+                   <ul>
+                       <li>je vais voir mes enfants</li>
+                       <li>je faire faire mes courses</li>
+                       <li>je rentre </li>
+                       <li>je prepare a mangé</li>
+                       <li>je sort </li>
+                       <li>je vais voir des potes</li>
+                       <li>Je vais boire un coup</li>
+                   </ul>
+                </article>
+                <article>
+                    <h1>Comment faire des crepes</h1>
+                    <ol>
+                        <li>mettre 100g de farine</li>
+                        <li>mettre 4 oeufs</li>
+                        <li>mettre 2 sachet de levure </li>
+                        <li>versé 100cl de lait</li>
+                        <li>mélanger</li>
+                        <li>laissé reposé la pate</li>
+                        <li>passé a la cuisson</li>
+                        <li> Bonne d'égustation !!!</li>
+                    </ol>
+                </article>
+               
     </div> <!-- fermeture de la div main -->
     <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
        <footer class="fond_jaune">Pied de page</footer><!-- le pied de page -->
