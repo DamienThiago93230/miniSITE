@@ -4,70 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Corection</title>
+    <title>Correction</title>
     <style>
       #conteneur {
           width: 1000px;
-          /* border: 2px solid black; */
+          margin: 0 auto;
           background: aquamarine;
           color: black;
-          margin: 0 auto;
-      }      
+      }    
+
       header {
-          height: 200px;
+          color: #000;
+          height: 250px;
+          text-align: center;
           background: rosybrown;
+          font-family: fantasy;
+          /* border: 1px dashed #111111; */
+      }
+      header h1 {
+          border: 1px dashed aquamarine;
+          padding-top: 30px;
+          line-height: 50px;
+      }
+      nav {
+          height: 50px;
+          background: #d1df0d;
+          /* border: 1px solid #000; */
+      }
+      .grandCarre {
+          float: left;
+          /* border: 1px solid #000; */
+          width: 500px;
+          height: 500px;
       }
 
-      .div_un, .div_deux, .div_trois, .div_quatre {
+      .image {
+          background: url('img/venise01.jpg') no-repeat center;
+          background-size: cover; /* pour couvrir tous l'espace de l'élèment parent */
+      }
+      .carreMoyen {
           float: left;
-          width: 496px;
-          height: 496px;
-          border: 2px solid #000;
+          border: 1px solid black;
+          width:246px;
+          height: 246px;
+          background-size: cover;
+          background: url('img/psg1.png');
       }
-      .div_un {
-          background: red;
+      .carreMini {
+          float: left;
+          width: 120px;
+          height: 120px;
+          border: 1px solid #000;
+          background: url('img/psg.jpeg');
       }
-      .div_deux {
-          background: rgb(208, 255, 0);
+      
+      .da {
+          float: left;
+          width: 59px;
+          height: 59px;
+          border: 1px solid #000;
+
       }
-      .div_trois {
-          background: rgb(25, 0, 255);
-      }
-      .div_quatre {
-          background: rgb(81, 255, 0);
-      }
-      .un{
-        background: purple;
-      }
-     .deux{
-        background: rgb(255, 0, 140);
-     }
-     .trois{
-        background: green;
-     }
-     .quatre {
-        background: olive;
-     }
-     .un, .deux, .trois, .quatre {
+     .rectangle {
          float: left;
-         width: 244px;
-         height: 244px;
-         border: 2px solid black;
+         width: 246px;
+         height: 124px;
+         background-size: cover;
+         border: 1px solid #000;
      }
      
-     .rt {
-         float: left;
-         width: 116px;
-         height:116px;
-         border: 2px solid black;
 
-     }
-
-     footer {
-        
+     
+        footer {
          /* border: 2px solid black; */
          background: rosybrown;
-     }
+     } 
      footer p {
          text-align: justify;
      }
@@ -78,66 +89,156 @@
 </head>
 <body>
     <div id="conteneur">
-        <header>
-            <p>
-                zone header
-            </p>
+        <header class="header">
+         <h1>Trombi</h1>
         </header>
-        <nav>
-            nav
-        </nav>
-        <section>
-            <div class="div_un">
-                <div class="un">
-                   <div class="rt"></div>
-                   <div class="rt"></div>
-                   <div class="rt"></div>
-                   <div class="rt"></div>
-                </div>
-            <div class="deux">
-                <div class="rt"></div>
-                <div class="rt"></div>
-                <div class="rt"></div>
-                <div class="rt"></div>
-            </div>
-                <div class="trois">
-                        <div class="rt"></div>
-                        <div class="rt"></div>
-                        <div class="rt"></div>
-                        <div class="rt"></div>
-                </div>
-                <div class="quatre">
-                        <div class="rt"></div>
-                        <div class="rt"></div>
-                        <div class="rt"></div>
-                        <div class="rt"></div>
-                </div> 
+        <nav><p>NAV</p></nav>
+            
+        
+        <section div class="section">
+            
+<!-- carre 1 -->
+<div class="grandCarre ">
+    <div class="grandCarre">
+        <div class="carreMoyen">
+                <div class="carreMini"><img src="img/psg.png"> </div>
+                <div class="carreMini"> <img src="img/cavani.jpg"></div>
+                <div class="carreMini"> <img src="img/mbappe.jpg"></div>
+                <div class="carreMini"> <img src="img/neymar2.jpg"></div>
+             </div>
+        <div class="carreMoyen"> 
+                <div class="carreMini"> <img src="img/coupe du monde.jpg"></div>
+                <div class="carreMini"> <img src="img/ligue des champios.jpg"></div>
+                <div class="carreMini"> <img src="img/zidane.jpg"></div>
+                <div class="carreMini"> <img src="img/ballondor.jpg"></div>
+        </div>
+        <div class="carreMoyen"> 
+                <div class="carreMini"><img src="img/ballonCDM.jpg"> </div>
+                <!-- <div class="carreMini"> </div>
+                <div class="carreMini"> </div>
+                <div class="carreMini"> </div> -->
+        </div>
+        <div class="carreMoyen"> 
+                <div class="rectangle">
+                        <img src="img/iciCparis.jpg"> </div>
+                <div class="carreMini"> </div>
+                
+        </div>
+    </div>
+</div>
+ <!-- carre2        -->
+    <div class="grandCarre">  
+            <div class="carreMoyen"> 
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+             </div>    
+             <div class="carreMoyen"> 
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                    <div class="da"> </div>
+                 </div>    
+                 <div class="carreMoyen"> 
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                        <div class="da"> </div>
+                     </div>    
+                     <div class="carreMoyen"> 
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+                <div class="da"> </div>
+             </div>    
+  </div>
 
-            </div>
-            <div class="div_deux">
-                <div class="un">E</div>
-                <div class="deux">F</div>
-                <div class="trois">G</div>
-                <div class="quatre">H</div>
-            </div>
-            <div class="div_trois">
-                <div class="un">I</div>
-                <div class="deux">J</div>
-                <div class="trois">K</div>
-                <div class="quatre">L</div>
-            </div>
-            <div class="div_quatre">
-                <div class="un">L</div>
-                <div class="deux">M</div>
-                <div class="trois">N</div>
-                <div class="quatre">O</div>
-            </div>
+   <div class="grandCarre image">
+          <div class="grandCarre">
+          <div class="carreMoyen"> </div>
+          <div class="carreMoyen"> </div>
+          <div class="carreMoyen"> </div>
+           <div class="carreMoyen"> </div>
+        </div>
+    </div>
+    <!-- <div class="grandCarre image"> -->
+            <div class="grandCarre">
+            <div class="carreMoyen"><img src="img/veratti2.jpg"> </div>
+            <div class="carreMoyen"> </div>
+            <div class="carreMoyen"> </div>
+             <div class="carreMoyen"> </div>
+          </div>
+      </div>
+     </div>
+           
+            
+    
+            
+
+            
+
+
+
+
+
+
+
+                
 
         </section>
         <div="clear"></div>
-        <footer>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, error obcaecati, fuga consequuntur in iusto eligendi, perspiciatis doloremque minus quisquam voluptatibus eos qui repellendus modi quis fugiat nulla? Atque, repellendus.</p>
-        </footer>
+        <!-- <footer>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis commodi corporis voluptatibus ratione ipsa necessitatibus dignissimos recusandae nobis, voluptates repellat soluta non! Natus minus maxime tenetur, architecto impedit ullam!</p>
+        </footer> -->
 
 
     </div> <!-- fin de conteneur -->
