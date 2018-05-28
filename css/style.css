@@ -42,7 +42,6 @@ body {
     margin-top: 20px;
     margin-right:auto;
     margin-left:auto;
-   
 }
 
 /* le haut de page */
@@ -53,10 +52,26 @@ header {
     height: 400px;/* hauteur de l'élèment */
     border: 2px solid #9CB5CE;
 }
+
+header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+header h1 a:over {
+    background-color: #333;
+    color: white;
+}
+
+.texte_droite {
+    text-align: right;
+}
+
 nav {
     background: yellowgreen;
     border-radius: 0% 14% 0% 0%;
 }
+
 nav h1 {
     background-color: white;
     text-transform: uppercase;
@@ -64,15 +79,18 @@ nav h1 {
     text-align: center;
     margin-left: 10%;
 }
+
 nav h1 a {
      text-decoration: none;
      color: black;
 }
+
 nav h1 a:hover {
     /* text-decoration: none; */
     background-color: black;
     color: white;
 }
+
 nav ul li {
     background-color: greenyellow;
     list-style-type: none;
@@ -199,9 +217,14 @@ caption {
     border-left: 4px solid blue;
 }
 .cartouche {/* un essai de bordure avec des arrondis */
-    border: 3px solid red;
+    border: 5px solid red;
     border-radius: 100px;
-    padding: 25px;
+    padding: 15px;
+}
+.cartouche2 {/* un essai de bordure avec des arrondis */
+    border: 3px solid blue;
+    border-radius: 100px;
+    padding: 15px;
 }
 /* ici pour l'astuce pour le survol dans la page texte */
 #survol p {

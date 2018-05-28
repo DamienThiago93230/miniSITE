@@ -4,24 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" contente="widht=device=widht,initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" contente="ie-edge">
-        <title>miniSITE : accueil</title>
-        <title>miniSITE : garage/ une page avec des styles CSS</title>
+        <title>miniSITE : Photos</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!--la feuille de style externe avec une balise link-->
         <link href="css/style.css" rel="stylesheet">
     </head>
 <body> 
+    
     <!-- des nouveautés HTML 5 -->
     <!-- debut le div pricinpal -->
    <div id="wrapper">
+       
     <!-- en-tete de la page ou d'une division ou section -->
        <header>
            <h1><a href="index.html">MiniSite des photos</a></h1>
       </header>
+      
       <aside class="fond_bleu">
             <h1>Bienvenue</h1><!-- la navigation de la page -->
 <!-- le coté de la page -->
 <nav class="fond_vert">
         <h2>La navigation</h2>
+        
         <ul>
             <li><a href="index.html" title="MiniSite : Accueil">Accueil</a></li> 
             <li><a href="photos.html" title="MiniSite : des photos">Photos</a></li>
@@ -30,7 +34,7 @@
             <li><a href="tableaux.html" title="MiniSite : des tableaux">Tableaux</a></li> 
             <li><a href="mignon.html" title="MiniSite : Un mignon">Mignon</a></li> 
             <li><a href="bilbo.html" title="MiniSite : Bilbo ">Bilbo le hobbit</a></li>
-            <li><a href="desbordure.html" title="MiniSite : Bordure ">Bordures</a></li>
+            <li><a href="bordure.html" title="MiniSite : Bordure ">Bordures</a></li>
             <li><a href="float.html" title="MiniSite : float ">Le float</a></li>
             <li><a href="zoning1.html" title="MiniSite : zoning1 ">Zoning1</a></li>
                 <ul>
@@ -41,17 +45,40 @@
         </ul>
     </nav>
     </aside>
-                    <div id="main" class=background: linear-gradient(to left, red, yellow, green);>
-                   <article><!-- un article avec sont h2 -->
-                   <h2><p>Venise magnifique le jour.</p>
-                   <img src="img/venise01.jpg" alt="venise" widht=5% height=5%></h2>
-                   
-                   <p>tres beau paysage au bord du port!</p>
-                   <img src="img/venise02.jpg" alt="venise"  widht=5% height=5%>
-               </article>
+        <div id="main" class=background: linear-gradient(to left, red, yellow, green);>
+            <p class="texte_droite">
+                <a id="haut_de_page"></a>
+                <a href="#bas_de_page" title=" MiniSITE : le bas de page"><i class="fas fa-arrow-circle-down"></i></a>
+            </p>
+            <article><!-- un article avec sont h2 -->
+            <h2><p>Venise magnifique le jour.</p></h2>
+                 <img src="img/venise01.jpg" alt="venise" widht=5% height=5%>
+                 <img src="img/venise03.jpg" alt="venise"  widht=5% height=5%>
+            <hr>
+            <article>
+               <h2 class="cartouche">Espace pour Footeux</h2>
+               <p class="cartouche2">Nouveau logo PSG</p>
+                  <img src="img/psg.png" alt="PSG"  widht=5% height=5%>
+               <p class="cartouche2">Ballon d'or</p>
+                  <img src="img/ballondor.jpg" alt="Ballon d'or"  widht=5% height=5%>
+               <p class="cartouche2">Neymar.Jr</p>
+                  <img src="img/neymar2.jpg" alt="Neymar"  widht=5% height=5%>
+                  <p class="cartouche2">ICI C'EST PARIS</p>
+                  <img src="img/iciCparis.jpg" alt="iciCparis"  widht=5% height=5%>
+                  <br>
+                  <img src="https://sanslimitesn.com/wp-content/uploads/2018/02/58-10.png" alt="iciCparis"  widht=5% height=5%>
+            </article>
+           
+        </article>
+       <p class="texte_droite">
+           <a id="bas_de_page"></a>
+           <a href="#haut_de_page" title="MiniSITE : le haut de page"><i class="fas fa-arrow-circle-up"></i></a>
+       </p>
     </div> <!-- fermeture de la div main -->
     <div class="clear"></div><!-- cette div permet de reprendre le flux normal -->
        <footer class="fond_jaune">Pied de page</footer><!-- le pied de page -->
+       
+       <hr>
     </div><!-- fermeture wrapper -->
             
 </body>

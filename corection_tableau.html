@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>corection tableau</title>
+    <style>
+        body {
+            background: plum;
+        }
+        table {
+            background: rgb(162, 247, 162);
+        }
+       
+        table, th, td {
+            border:1px solid #333;
+            border-collapse: collapse;
+            /* background: rgb(162, 247, 162); */
+        }
+       
+        td, th {
+            padding: 10px;
+            text-align: left;
+            min-width:200px ;
+        } 
+        th {
+            background: lightskyblue;
+        }
+        tr:hover{
+            background: yellowgreen;
+        }    
+    </style>
+
+</head>
+<body>
+    <table border="1">
+        <tr><!-- table row une rangée de tableaux-->
+            <th>Noms :</th><!-- cellule de tableau -->
+            <td>Andrée Bourvil</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Téléphone :</th><!-- fusion de cette td avec la rangée du dessous -->
+            <td>Romainville 27 30</td>
+        </tr>
+
+        <tr>
+            <td>Passy 07 12</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>
